@@ -17,6 +17,8 @@ for i in parkings:
     tree = etree.parse("FR_MTP_COME.txt")
     for user in tree.xpath("Name"):
         print('Nom du parking :',user.text)
+    for user in tree.xpath("Total"):
+        print('Nombre total de places:',user.text)
     for user in tree.xpath("Free"):
         print('Nombre de places libres :',user.text) 
     
