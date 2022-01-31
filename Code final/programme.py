@@ -10,7 +10,7 @@ parkings=["FR_MTP_ANTI","FR_MTP_COME","FR_MTP_CORU","FR_MTP_EURO","FR_MTP_FOCH",
 url="https://data.montpellier3m.fr/dataset/disponibilite-des-places-dans-les-parkings-de-montpellier-mediterranee-metropole"
 #lien du site open data montpellier
 
-num=21
+num=2 #
 
 for j in range(num):
     for i in parkings:

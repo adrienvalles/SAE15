@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <park>
-<DateTime>2022-01-30T23:23:09.938</DateTime>
+<DateTime>2022-01-31T18:04:09.962</DateTime>
 <Name>Triangle</Name>
 <Status>Open</Status>
-<Free>300</Free>
+<Free>193</Free>
 <Total>436</Total>
 <DisplayOpenIf>100</DisplayOpenIf>
 <Reserve></Reserve>
