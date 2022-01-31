@@ -10,9 +10,9 @@ parkings=["FR_MTP_ANTI","FR_MTP_COME","FR_MTP_CORU","FR_MTP_EURO","FR_MTP_FOCH",
 url="https://data.montpellier3m.fr/dataset/disponibilite-des-places-dans-les-parkings-de-montpellier-mediterranee-metropole"
 #lien du site open data montpellier
 
-num=2 #
+num=17
 
-for j in range(num):
+for j in range(num):#Nombre de fois où la boucle va se répéter
     for i in parkings:
         response=requests.get("https://data.montpellier3m.fr/sites/default/files/ressources/"+i+".xml")
         #Récuperer tout les liens de chaque parking de montpellier
@@ -89,4 +89,4 @@ for j in range(num):
             f4.close()
             print("velos")#Ici Nous avons utilisé un print qui me permet de voir directement sur la console si le code marche, au lieu d'aller vérifier les fichiers à chaque fois que le programme est en marche
             f2.close()
-    time.sleep(3600)
+    time.sleep(3600)# focntion qui permet d'endormir le programme selon une durée déterminée
