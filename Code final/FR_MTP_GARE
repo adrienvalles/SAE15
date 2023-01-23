@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<park xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <DateTime>2022-01-31T18:04:03</DateTime>
-  <Name>GARE</Name>
-  <Status>Open</Status>
-  <Free>391</Free>
-  <Total>656</Total>
-  <DisplayOpenIf>-1</DisplayOpenIf>
-</park>
