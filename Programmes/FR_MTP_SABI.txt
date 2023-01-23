@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<park>
+	<DateTime>2023-01-23T01:36:56</DateTime>
+	<Name>SABI</Name>
+	<Status>Open</Status>
+	<Free>0269</Free>
+	<Total>0283</Total>
+</park>
