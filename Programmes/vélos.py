@@ -3,6 +3,7 @@ import json
 import time
 
 
+stations=["Rue Jules Ferry - Gare Saint-Roch", "Corum", "Foch", "Beaux-Arts", "Antigone centre"]
 
 
 # URL de l'API JSON
@@ -26,9 +27,9 @@ with open("data.txt", "w") as file:
     available_bike_stands = 0
 
 # Boucle pour parcourir toutes les stations et calculer le taux d'occupation
-    for station in data:
-        total_bike_stands += station("capacity")
-        available_bike_stands += station("num_bikes_available")
+    for i in stations:
+        total_bike_stands=i["capacity"]
+        available_bike_stands=i["num_bikes_available"]
 
 occupancy_rate = (total_bike_stands - available_bike_stands) / total_bike_stands
 
@@ -36,7 +37,7 @@ occupancy_rate = (total_bike_stands - available_bike_stands) / total_bike_stands
 with open("data.txt", "w") as text_file:
     text_file.write("Taux d'occupation des places de vélos : {:.2f}%\n".format(occupancy_rate * 100))
     text_file.write("Données :\n")
-    json.dump(json_data, text_file, indent=4)
+    
     
 time.sleep(duration)
     
