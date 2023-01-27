@@ -385,12 +385,34 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 <br>
 <br>
 
+**Je constate tout d'abord que le taux d'occupation n'est pas du tout le même selon les jours , en effet le samedi 22/01 l'évolution du taux d'occupation ne cesse de varier.**
+
+<br>
+
+**De 14h à 16h le taux d'occupation augmente fortement de 6 à 7% . J'imagine que le Samedi la plupart des gens ne travaillent pas, pratiquement toutes les écoles sont fermés, hors mis pour certaines université ou les étudiants ont cours.**
+
+<br>
+
+**Le samedi en général les parkings sont pas mal occupés puisque les gens vont faire les courses sortir au cinéma, au restaurant  avec des amis ou en famille ou encore tout simplement sortir en ville pour juste la visiter.
+Un autre facteur aussi est que le samedi cert   in sparkings peuvent être gratuits.**
+
+<br>
+<br>
+
+**Le dimanche je constate que le taux d'occupation a diminué comparé à Samedi.
+De 14h à23h la courbe ne cesse de diminué à part de 19h à 20h ou il y a une légéère augmentation, cela peux s'expliquer peut-être par le fait qu'un dimanche certaines personnes vont dans un restaurant ou chez la famille manger.
+Puis le reste de la soirée le taux diminue, les gens doivent rentrer chez eux.**
+<br>
+<br>
+
+**Le jeudi, je constate que le taux d'occupation des parkings voitures de Montpellier est beaucoup plus grand que le week-end.**
+<br>
+**En effet je pense que la semaine la plupart des gens travaillent, les écoles sont ouvertes et tous les magasins sont ouverts.
+Je constate que le pic d'occupation est à 15h puis cela diminue fortement et constamment tout au long de la journée jusqu'à 21h le soir quand tous les étudiants, employés... rentrent chez eux.**
 
 
-
-
-
-
+<br>
+<br>
 
 ### Calcul mathématiques des données ###
 <br>
