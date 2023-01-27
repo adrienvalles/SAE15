@@ -389,11 +389,11 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 
 **Je constate tout d'abord que le taux d'occupation n'est pas du tout le même selon les jours , en effet le samedi 22/01 l'évolution du taux d'occupation ne cesse de varier.**
 
-<br>
+
 
 **De 14h à 16h le taux d'occupation augmente fortement de 6 à 7% . J'imagine que le Samedi la plupart des gens ne travaillent pas, pratiquement toutes les écoles sont fermés, hors mis pour certaines universités ou les étudiants ont cours.**
 
-<br>
+
 
 **Le samedi en général les parkings sont pas mal occupés puisque les gens vont faire les courses sortir au cinéma, au restaurant  avec des amis ou en famille ou encore tout simplement sortir en ville pour juste la visiter.
 Un autre facteur aussi est que le samedi certains parkings peuvent être gratuits.**
