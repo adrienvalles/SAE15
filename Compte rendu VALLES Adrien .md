@@ -5,7 +5,7 @@
 >**A noter: J'ai finalement réalisé cette SAE seul, puisque Raid Neghouche a été absent à plusieurs séances, c'est donc pour cela que j'ai préféré travailler seul pour pas me pénaliser.**
 <br>
 
->**Je tiens à dire que les images ne s'affiche pas dans le compte rendu en PDF, il faut voir celui en markdown ou alors voir les images dans le dossier captures sur mon depôt Github .**
+>**Je tiens à dire que les images des courbes et du résultat du programme "fonctions maths" à la fin ne s'affiche pas dans le compte rendu en PDF, il faut voir celui en markdown ou alors voir directement les images dans le dossier captures sur mon depôt Github .**
 <br>
 
 ***Lien du dépôt Github:***
