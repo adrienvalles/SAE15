@@ -17,7 +17,7 @@ Nom=input("Nom du fichier:")# indiquer le nom du fichier
 periode=int(input("Période(min):"))
 periode=periode*60  # cela indique la durée de l'acquisition du programme en minutes . Par exemple si je tape période= 2 , la durée sera de 120min c'est à dire 2 heures car ici on multiplie par 60
 duree=int(input("durée(sec):"))
-t=60
+t=60  # t c'est le nombre de fois que le programme va se répeter .
 
 for p in range(t):
     for i in parkings: #la liste "parkings" contient les noms des fichiers de chaque zone. On fait un boucle pour récupérer des données de chaque zone. #Récupérer les données et les mettre dans un nouveau fichier
