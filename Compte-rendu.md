@@ -362,25 +362,26 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 <br>
 <br>
 
-
+>**Pour le samedi 22/01/2023**
 <img src="/Captures/Courbe_sam.PNG" alt="Samedi">
 <br>
 
->**Pour le samedi 22/01/2023**
 
 <br>
-<br>
-<img src="/Captures/Courbe_dim.PNG" alt="Dimanche">
 <br>
 
 >**Pour le dimanche 23/01/2023**
+<img src="/Captures/Courbe_dim.PNG" alt="Dimanche">
+<br>
+
 
 <br>
-<br>
-<img src="/Captures/Courbe_jeu.PNG" alt="Jeudi">
 <br>
 
 >**Pour le jeudi 26/01/2023**
+<img src="/Captures/Courbe_jeu.PNG" alt="Jeudi">
+<br>
+
 
 <br>
 <br>
@@ -416,35 +417,59 @@ Je constate que le pic d'occupation est à 15h puis cela diminue fortement et co
 
 ### Calcul mathématiques des données ###
 <br>
-Pour avoir plus d'informations concernant l'analyse de ces données 
+Pour avoir plus d'informations concernant l'analyse de ces données j'ai effectué un programme qui permet de calculer la moyenne, lécart type et la variance des différentes valeures du taux d'occupation des parkings de Montpellier pour le Jeudi, le Samedi et le Dimanche
+<br>
+Pour cela j'ai d'abord importé toutes les librairies de "statistiques" et de "math" nécessaires pour calculer les fonctions.
+
+<br>
+<br>
+
+***Voici ci-dessous le programme qui effectue les différents calculs sur les données***
+
+<br>
+
+````php
+
+from statistics import *
+from math import *
+
+def moyenne(liste):
+    return (1/len(liste)) * sum(liste)
+
+def ecart_type(liste):
+    moy = moyenne(liste)
+    N = len(liste)
+    var = 0
+    for nb in liste:
+        var += (nb - moy)**2
+    return sqrt((1/N) * var)
 
 
 
+occup=[58.79, 61.46, 62.78, 64.82, 65.41, 65.28, 63.93, 62.43, 60.17, 57.59, 55.68, 51.70, 49.91, 48.12, 46.09, 43.29 ,39.94]
+
+print(moyenne(occup))
+print(ecart_type(occup))
+print(pvariance(occup))
+
+````
+<br>
+
+J'ai créer une fonction "moyenne" qui caclule la moyenne à partir de la longueur de la liste ("len")
+puis une focntion "ecart-type" qui calcule la variance à partir des valeurs et de la moyenne de L'opérateur += effectue une addition puis affecte le résultat à la même variable
+Puis le calcul de l'écart type s'effectue qui divise 1 par la longueur de la liste multiplié par le résultat de la variance
+
+<br>
+
+***Voici les résultats:***
+<br>
+
+<img src="/Captures/maths_jeu.PNG" alt="résultats1">
+<br>
+**Pour la journée de Jeudi, la moyenne du taux d'occupation est d'environ egale à 56, l'écart type
+est de 8 et la variance de 64
+
+<br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->* Pour plus d'informations concernanrt l'analyse des données veuillez consultez ma page web avec un peu plus de détails sur les différents résultats. *
+***Pour retrouver toutes les données vous pouvez aller consulter ma page web disponible sur mon deô^t Github.***
