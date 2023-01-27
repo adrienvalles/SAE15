@@ -76,6 +76,7 @@ print('Pourcentage de places libres de toute la ville' ,round(pour,2) ,'%')
 print('Pourcentage de places occupées de toute la ville' ,round(opour,2) ,'%')
 ````
 
+<br>
 
 J'ai par la suite pris l'exemple de 4 parkings afin de comârer leur pourcentages de places libres ainsi que leur taux d'occupation sur une journée pour voir l'évolution de chaque parkings et pour vérifier si ils ont la même fréquentation.
 
