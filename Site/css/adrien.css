@@ -1,0 +1,13 @@
+body{
+    background:url("../images/montpellierpg.jpg");
+    background-size:cover;
+    margin:0;
+	padding: 0;
+    max-width:100%;
+    height:auto;
+    background-repeat:no-repeat scroll;
+	background-attachment: fixed;
+	opacity:1 ;
+}
+
+

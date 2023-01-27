@@ -363,7 +363,7 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 <br>
 <br>
 
->**Pour le samedi 22/01/2023**
+>**Pour le samedi 21/01/2023**
 <img src="/Captures/Courbe_sam.PNG" alt="Samedi">
 <br>
 
@@ -371,7 +371,7 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 <br>
 <br>
 
->**Pour le dimanche 23/01/2023**
+>**Pour le dimanche 22/01/2023**
 <img src="/Captures/Courbe_dim.PNG" alt="Dimanche">
 <br>
 
@@ -387,7 +387,7 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 <br>
 <br>
 
-**Je constate tout d'abord que le taux d'occupation n'est pas du tout le même selon les jours , en effet le samedi 22/01 l'évolution du taux d'occupation ne cesse de varier.**
+**Je constate tout d'abord que le taux d'occupation n'est pas du tout le même selon les jours , en effet le samedi 21/01 l'évolution du taux d'occupation ne cesse de varier.**
 
 
 
