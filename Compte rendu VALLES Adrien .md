@@ -2,14 +2,19 @@
  
 
 
-> A noter: J'ai finalement réalisé cette SAE seul, puisque Raid Neghouche a été absent à plusieurs séance c'est donc pour cela que j'ai préféré travailler seul pour pas me pénaliser
+>**A noter: J'ai finalement réalisé cette SAE seul, puisque Raid Neghouche a été absent à plusieurs séances, c'est donc pour cela que j'ai préféré travailler seul pour pas me pénaliser.**
+<br>
+
+>**Je tiens à dire que les images ne s'affiche pas dans le compte rendu en PDF, il faut voir celui en markdown ou alors voir les images dans le dossier captures sur mon depôt Github .**
+<br>
 
 ***Lien du dépôt Github:***
 
 https://github.com/adrienvalles/SAE15
 
 
- 
+<br> 
+
 ---
 
 ## Préparation du mini projet ##
@@ -232,7 +237,7 @@ for p in range(t):
 ````
 ---
 
->* Pour la partie vélos j'ai réussi à extraire les données des différentes stations en récupérent grâce à la fonctio requests le lien des données conteant les informations pour chaque statons ainsi que le lien conteant le statut de ces stations. J'ai ensuite stockées les données dans 2 ichierx texte différents mais je n'ai pas pu réussir à les analyser en calculant leur taux d'ocupation ou encore leur moyenne car à la base cela devrait être mon binôme qui s'en occupé, j'ai donc assurer aussi cette partie en faisant ce que je pouvais faire le plus possible seul.
+>* Pour la partie vélos j'ai réussi à extraire les données des différentes stations en récupérant grâce à la fonctiob "requests" le lien des données contenant les informations pour chaque statons ainsi que le lien contenant le statut de ces stations. J'ai ensuite stockées les données dans 2 fichiers texte différents mais je n'ai pas pu réussir à les analyser en calculant leur taux d'ocupation ou encore leur moyenne car à la base cela devrait être mon binôme qui s'en occupé, j'ai donc assurer aussi cette partie en faisant ce que je pouvais faire le plus possible seul mais j'ai eu quelques problèmes qui m'on empêché d'avoir les résultats des occupations.
 
 
 <br>
@@ -380,7 +385,7 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 <br>
 
 >**Pour le jeudi 26/01/2023**
-<img src="/Captures/Courbe_jeu.PNG" alt="Jeudi">
+<img src="/Captures/Courbe_jeu.PNG" alt= "Jeudi">
 <br>
 
 
