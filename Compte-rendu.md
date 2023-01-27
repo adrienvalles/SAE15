@@ -348,11 +348,11 @@ plot "datas_parks.txt" using 1:2 title "ANTI" with linepoints, using 1:3 tittle 
 <br>
 
 **On peut constater qu'ils n'ont pas la même fréquentation car cela dépend de leur emplacement.
-Par exemple, pour le parkings "Occitanie" j'ai constaté qu'il se situé à coté d'un IUT et j'en ai déduit une corrélation puisque si l'on remarque, ce parking se remplt fortement entre 9h et 12h qui est souvent le début des cours.**
+Par exemple, pour le parking "Occitanie" j'ai constaté qu'il se situé à coté d'un IUT et j'en ai déduit une corrélation puisque si l'on remarque, ce parking se remplit fortement entre 9h et 12h qui est souvent l'heure du début des cours.**
 <br>
 
-**Puis vers 12h et jusqu'à 13 heures il y a une légére diminution du taux d'occupation puisuqe c'est souvent l'heure du repas .
-Et puis enfin on peut constater que de 14h jusqu'à 15 heures l'occupation reste constant et à partir de 16 heures et ce, jusqu'à 9 heures il subit une plus forte diminution de l'occupation comparé aux autres parkings.
+**Puis vers 12h et jusqu'à 13 heures il y a une légére diminution du taux d'occupation puisque c'est souvent l'heure du repas .
+Et puis enfin on peut constater que de 14h jusqu'à 15 heures l'occupation reste constante et à partir de 16 heures et ce, jusqu'à 9 heures il subit une plus forte diminution de l'occupation comparé aux autres parkings.
 On peut analyser cela par le fait que vers 16 heures certaines personnes finissent les cours et le travail.**
 
 <br>
@@ -390,18 +390,18 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 
 <br>
 
-**De 14h à 16h le taux d'occupation augmente fortement de 6 à 7% . J'imagine que le Samedi la plupart des gens ne travaillent pas, pratiquement toutes les écoles sont fermés, hors mis pour certaines université ou les étudiants ont cours.**
+**De 14h à 16h le taux d'occupation augmente fortement de 6 à 7% . J'imagine que le Samedi la plupart des gens ne travaillent pas, pratiquement toutes les écoles sont fermés, hors mis pour certaines universités ou les étudiants ont cours.**
 
 <br>
 
 **Le samedi en général les parkings sont pas mal occupés puisque les gens vont faire les courses sortir au cinéma, au restaurant  avec des amis ou en famille ou encore tout simplement sortir en ville pour juste la visiter.
-Un autre facteur aussi est que le samedi cert   in sparkings peuvent être gratuits.**
+Un autre facteur aussi est que le samedi certains parkings peuvent être gratuits.**
 
 <br>
 <br>
 
 **Le dimanche je constate que le taux d'occupation a diminué comparé à Samedi.
-De 14h à23h la courbe ne cesse de diminué à part de 19h à 20h ou il y a une légéère augmentation, cela peux s'expliquer peut-être par le fait qu'un dimanche certaines personnes vont dans un restaurant ou chez la famille manger.
+De 14h à 23h la courbe ne cesse de diminué à part de 19h à 20h ou il y a une légéère augmentation, cela peux s'expliquer peut-être par le fait qu'un dimanche certaines personnes vont dans un restaurant ou chez la famille manger.
 Puis le reste de la soirée le taux diminue, les gens doivent rentrer chez eux.**
 <br>
 <br>
@@ -417,7 +417,7 @@ Je constate que le pic d'occupation est à 15h puis cela diminue fortement et co
 
 ### Calcul mathématiques des données ###
 <br>
-Pour avoir plus d'informations concernant l'analyse de ces données j'ai effectué un programme qui permet de calculer la moyenne, lécart type et la variance des différentes valeures du taux d'occupation des parkings de Montpellier pour le Jeudi, le Samedi et le Dimanche
+Pour avoir plus d'informations concernant l'analyse de ces données j'ai effectué un programme qui permet de calculer la moyenne, l'écart type et la variance des différentes valeurs du taux d'occupation des parkings de Montpellier pour le Jeudi, le Samedi et le Dimanche.
 <br>
 Pour cela j'ai d'abord importé toutes les librairies de "statistiques" et de "math" nécessaires pour calculer les fonctions.
 
@@ -457,7 +457,7 @@ print(pvariance(occup))
 
 J'ai créer une fonction "moyenne" qui caclule la moyenne à partir de la longueur de la liste ("len")
 puis une focntion "ecart-type" qui calcule la variance à partir des valeurs et de la moyenne de L'opérateur += effectue une addition puis affecte le résultat à la même variable
-Puis le calcul de l'écart type s'effectue qui divise 1 par la longueur de la liste multiplié par le résultat de la variance
+Puis le calcul de l'écart type s'effectue en divisant 1 par la longueur de la liste multiplié par le résultat de la variance
 
 <br>
 
@@ -470,6 +470,9 @@ Puis le calcul de l'écart type s'effectue qui divise 1 par la longueur de la li
 est de 8 et la variance de 64
 
 <br>
+<br>
+
+**J'en conclue que la semaine le taux d'occupation des parkings voitures de Montpellier est plus important que le week-end pour prendre l'exemple de mes résultats**
 
 
-***Pour retrouver toutes les données vous pouvez aller consulter ma page web disponible sur mon deô^t Github.***
+***Pour retrouver toutes les données vous pouvez aller consulter ma page web disponible sur mon dépôt Github.***
