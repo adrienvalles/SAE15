@@ -4,20 +4,25 @@
 
 > A noter: J'ai finalement réalisé cette SAE seul, puisque Raid Neghouche a été absent à plusieurs séance c'est donc pour cela que j'ai préféré travailler seul pour pas me pénaliser
 
+***Lien du dépôt Github:***
+
+https://github.com/adrienvalles/SAE15
+
 
  
+---
+
+## Préparation du mini projet ##
+
 Pour ce faire, j'ai utilisé les données extraites du site ***open data de Montpellier*** qui m'ont permis d'analyser les données .
 
 
-## Préparation du mini projet ##
----
-
 Avant de pouvoir réaliser le mini projet, j'ai eu une séance TP afin de me préparer au mieux au traitement des données du site opendata. Pour pouvoiur récupérer ces données je me suis appuyer sur les premières questions du TP qui m'a beaucoup aidé, en demandant de tester le programme.
 
-En effet ce programme va grâce à la fonction requets, envoyer une demande http vers le site en question afin d'extraire les données pour les affciher dans un fichier texte conteant toutes les information s pour tous les parkings voiture de la Ville de Montpellier
+En effet ce programme va grâce à la fonction requets, envoyer une demande http vers le site en question afin d'extraire les données pour les affciher dans un fichier texte contenant toutes les informations pour tous les parkings voiture de la Ville de Montpellier
 
 
-
+````php
 PAR=['FR_MTP_ANTI','FR_MTP_COME','FR_MTP_CORU','FR_MTP_EURO','FR_MTP_FOCH','FR_MTP_GAMB','FR_MTP_GARE','FR_MTP_TRIA','FR_MTP_ARCT',
 'FR_MTP_PITO','FR_MTP_CIRC','FR_MTP_SABI','FR_MTP_GARC','FR_MTP_SABL','FR_MTP_MOSS','FR_STJ_SJLC','FR_MTP_MEDC','FR_MTP_OCCI','FR_CAS_VICA','FR_MTP_GA109','FR_MTP_GA250','FR_CAS_CDGA','FR_MTP_ARCE','FR_MTP_POLY']
  
@@ -25,14 +30,16 @@ for i in PAR:
     x=requests.get(f'https://data.montpellier3m.fr/sites/default/files/ressources/{i}.xml')
     print(x.text)
  
+ ````
 
+---
 
 ## Analyse de données ##
 
-***Ceci est un programme  qui permet le suivi de l’occupation de tous les parkings de Montpellier et en affichant à la fin le pourcentage de places libres  et de places occupées de toute la ville.***
+***Ceci est un programme  qui permet le suivi de l’occupation de tous les parkings de Montpellier et en affichant à la fin le pourcentage de places libres et de places occupées de toute la ville.***
 
 
-````
+````php
 
 import requests
 from lxml import etree
@@ -70,14 +77,16 @@ print('Pourcentage de places occupées de toute la ville' ,round(opour,2) ,'%')
 ````
 
 
-J'ai par la suite pris l'exemple de 4 parkings afin de comaprer leur pourcentages de places libres ainsi que leur taux d'occupation sur une journée pour voir l'évolution de chaque parkings et pour vérifier qu'ils ne sont pas tous utilisés excessiement;
+J'ai par la suite pris l'exemple de 4 parkings afin de comârer leur pourcentages de places libres ainsi que leur taux d'occupation sur une journée pour voir l'évolution de chaque parkings et pour vérifier si ils ont la même fréquentation.
+
+<br>
 
 
+***Voici le programme qui a calculé  le nombres de places libres et par la suite en ajoutant une fonction , calculer un pourcentage et en déduire le taux d'occupation de chacun des 4 parkings.***
 
-***Voici le programme qui a calculé extrait le nombres de places libres pour par la suite ajouter ue fonction quiva calculer un pourcentage et en déduire le taux d'occupation***
-
-
-````
+<br>
+<br>
+````php
 import requests #librairie HTTP
 import time
 from lxml import etree
@@ -152,9 +161,10 @@ for j in range(num):#Nombre de fois où la boucle va se répéter
 
 
 ````
-
+<br>
+<br>
 J'ai voulu ensuite analyser toutes les données pour tous les parkings de Montpellier en calculant le taux d'occupation total de la ville
-Pour cela j'ai ajouter dans une liste tous les noms de parkings puis j'ai fais une fonction qui affiche le taux d'occupation des parkings de Montepllier
+Pour cela j'ai ajouter dans une liste tous les noms de parkings puis j'ai fais une fonction qui affiche le taux d'occupation des parkings de Montepllier.
 
 
 
@@ -162,7 +172,7 @@ Pour cela j'ai ajouter dans une liste tous les noms de parkings puis j'ai fais u
 ***Voici mon programme avec les différentes fonctions commentées et leur signification***
 
 
-````
+````php
 
 import requests
 from lxml import etree
@@ -218,19 +228,23 @@ for p in range(t):
     f2.close()
     time.sleep(duree) #fonction qui suspend l'éxecution en fonction du nombre de secondes que j'ai attribué à ma fonction "duree"
 
-    
+
 ````
+---
+
+>* Pour la partie vélos j'ai résussi à extraire les donnés des informations des différentes stations ainsi que leur statut dans 2 fichier texte différents mais je n'ai pas pu réussir à les analyser en calculant leur taux d'ocupation ou encore leur moyenne car à la base cela devrait être mon binôme qui s'en occupé, j'ai donc assurer aussi cette partie en faisant ce que je pouvais faire seul.
 
 
->* Pour la partie vélos j'ai résussi à extraire les donnés des informations des différentes stations ainsi que leur statut dans 2 fichier texte différents mais je n'ai pas pu réussir à les analyser en calculant leur taux d'ocupation ou encore leur moyenne car à la base cela devrait être mon binôme qui s'en occupé, j'ai donc assurer aussi cette partie en faisant le plus possible de mes capacités.
-
+<br>
+<br>
 
 ***Voici donc mon sympatique programme qui récupère les données json des stations vélos de Montpellier***
 
 
 
 
-````
+````php
+
 import json
 import requests
 import time
@@ -281,7 +295,7 @@ time.sleep(duration)
 
 
 ````
-
+___
 ## Traitement des données ##
 
 Pour traiter les différentes données j'ai choisi d'utliser "Gnuplot" qui est un programme de ligne de commande et d'interface graphique qui peut générer des tracés en deux et trois dimensions de fonctions, de données et d'ajustements de données.
@@ -289,7 +303,7 @@ J'ai trouvé cette interface pratique et très simple d'utilisation
 
 
 
-Voici ci-dessous les différentes lignes de commandes qui m'ont permis de tarcer une courbe de données qui pred en paramètre le taux d'occupation des parkinsg voitures au cours du temps
+Voici ci-dessous les différentes lignes de commandes qui m'ont permis de tracer une courbe de données qui pred en paramètre le taux d'occupation des parkinsg voitures au cours du temps
 
 ````
 set terminal png size 800,600
