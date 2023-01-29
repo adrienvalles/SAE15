@@ -86,6 +86,7 @@ J'ai par la suite pris l'exemple de 4 parkings afin de comârer leur pourcentage
 
 <br>
 <br>
+
 ````php
 import requests #librairie HTTP
 import time
@@ -118,7 +119,7 @@ for j in range(num):#Nombre de fois où la boucle va se répéter
             f2.write('\n')
         
         for user in tree.xpath("Name"):
-            print('Nom du parking :',user.text) #Ici Nous avons utilisé un print qui me permet de voir directement dans la console si le code marche, au lieu d'aller vérifier les fichiers à chaque fois que le programme est en marche
+            print('Nom du parking :',user.text) #Ici J'ai utilisé un print qui me permet de voir directement dans la console si le code marche, au lieu d'aller vérifier les fichiers à chaque fois que le programme est en marche
             f2.write('Parking :') 
             f2.write(user.text) #Afficher le nom du parking sur le fichier
             f2.write('\n')
@@ -157,17 +158,17 @@ for j in range(num):#Nombre de fois où la boucle va se répéter
     f2.write('\n')
         
 
-    time.sleep(3600)# focntion qui permet d'endormir le programme selon une durée déterminée
+    time.sleep(3600)# focntion qui permet d'endormir le programme selon une durée déterminée, cici chaque 1 heure le programme s'exécute
 
 
 ````
 <br>
 <br>
 J'ai voulu ensuite analyser toutes les données pour tous les parkings de Montpellier en calculant le taux d'occupation total de la ville
-Pour cela j'ai ajouter dans une liste tous les noms de parkings puis j'ai fais une fonction qui affiche le taux d'occupation des parkings de Montepllier.
+Pour cela j'ai ajouter dans une liste tous les noms de parkings puis j'ai fais une fonction qui affiche le taux d'occupation des parkings de Montepellier.
 
 
-
+<br>
 
 ***Voici mon programme avec les différentes fonctions commentées et leur signification***
 
@@ -232,13 +233,13 @@ for p in range(t):
 ````
 ---
 
->* Pour la partie vélos j'ai résussi à extraire les donnés des informations des différentes stations ainsi que leur statut dans 2 fichier texte différents mais je n'ai pas pu réussir à les analyser en calculant leur taux d'ocupation ou encore leur moyenne car à la base cela devrait être mon binôme qui s'en occupé, j'ai donc assurer aussi cette partie en faisant ce que je pouvais faire seul.
+>* Pour la partie vélos j'ai réussi à extraire les données des différentes stations en récupérent grâce à la fonctio requests le lien des données conteant les informations pour chaque statons ainsi que le lien conteant le statut de ces stations. J'ai ensuite stockées les données dans 2 ichierx texte différents mais je n'ai pas pu réussir à les analyser en calculant leur taux d'ocupation ou encore leur moyenne car à la base cela devrait être mon binôme qui s'en occupé, j'ai donc assurer aussi cette partie en faisant ce que je pouvais faire le plus possible seul.
 
 
 <br>
 <br>
 
-***Voici donc mon sympatique programme qui récupère les données json des stations vélos de Montpellier***
+***Voici donc mon programme qui récupère les données json des stations vélos de Montpellier avec une fonction qui devait calculer le taux d'occupation***
 
 
 
@@ -297,7 +298,7 @@ time.sleep(duration)
 ````
 ___
 ## Traitement des données ##
-
+<br>
 Pour traiter les différentes données j'ai choisi d'utliser "Gnuplot" qui est un programme de ligne de commande et d'interface graphique qui peut générer des tracés en deux et trois dimensions de fonctions, de données et d'ajustements de données.
 J'ai trouvé cette interface pratique et très simple d'utilisation 
 
@@ -305,7 +306,7 @@ J'ai trouvé cette interface pratique et très simple d'utilisation
 
 Voici ci-dessous les différentes lignes de commandes qui m'ont permis de tracer une courbe de données qui pred en paramètre le taux d'occupation des parkinsg voitures au cours du temps
 
-````
+````php
 set terminal png size 800,600
 set output 'image.png'
 set key inside bottom right
@@ -316,4 +317,47 @@ set timefmt "%H:%M:%S"
 set format x "%H:%M"
 set ylabel 'Taux d occupation des parkings voitures'
 set title 'Evolution du taux d occupation des parkings de Montpellier'
-plot "Data_voitures.txt" using 1:2 with linepoints
+plot "nom_du_fichier.txt" using 1:2 with linepoints
+
+````
+
+le "using 1:2" extrait les données de la 1ère et 2 ème colonne du fichier en question 
+<br>
+
+**Voici les courbes qui montrent le taux d'occupation des parkings de Montpellier à des jours différents**
+<br>
+
+<img src="/Captures/courbes_parkings.PNG" alt="parkings">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>* Pour plus d'informations concernanrt l'analyse des données veuillez consultez ma page web avec un peu plus de détails sur les différents résultats. *
