@@ -92,9 +92,7 @@ import requests #librairie HTTP
 import time
 from lxml import etree
 
-parkings=["FR_MTP_ANTI","FR_MTP_COME","FR_MTP_CORU","FR_MTP_EURO","FR_MTP_FOCH","FR_MTP_GAMB","FR_MTP_GARE","FR_MTP_TRIA","FR_MTP_ARCT","FR_MTP_PITO",
-"FR_MTP_CIRC","FR_MTP_SABI","FR_MTP_GARC","FR_MTP_MOSS","FR_STJ_SJLC","FR_MTP_MEDC","FR_MTP_OCCI","FR_CAS_VICA","FR_MTP_GA109",
-"FR_MTP_GA250","FR_CAS_CDGA","FR_MTP_ARCE"]
+parkings=["FR_MTP_ANTI","FR_MTP_COME","FR_MTP_CORU","FR_MTP_OCCI"]
 #Parkings de Montpellier
 
 url="https://data.montpellier3m.fr/dataset/disponibilite-des-places-dans-les-parkings-de-montpellier-mediterranee-metropole"
@@ -296,15 +294,30 @@ time.sleep(duration)
 
 
 ````
-___
-## Traitement des données ##
+
 <br>
+
+---
+## Traitement des données ##
+
+
+
+
+
+<br>
+
+
+
 Pour traiter les différentes données j'ai choisi d'utliser "Gnuplot" qui est un programme de ligne de commande et d'interface graphique qui peut générer des tracés en deux et trois dimensions de fonctions, de données et d'ajustements de données.
-J'ai trouvé cette interface pratique et très simple d'utilisation 
+J'ai trouvé cette interface pratique et très simple d'utilisation.
+
+<br>
 
 
+Voici ci-dessous les différentes lignes de commandes qui m'ont permis de tracer une courbe de données qui prends en paramètre le taux d'occupation de 4 parkings voitures au cours du temps.
 
-Voici ci-dessous les différentes lignes de commandes qui m'ont permis de tracer une courbe de données qui pred en paramètre le taux d'occupation des parkinsg voitures au cours du temps
+<br>
+
 
 ````php
 set terminal png size 800,600
@@ -314,28 +327,27 @@ set autoscale
 set xlabel 'temps (en heure)' 
 set xdata time
 set timefmt "%H:%M:%S"
-set format x "%H:%M"
+set format x "%H:%M":"%S"
 set ylabel 'Taux d occupation des parkings voitures'
 set title 'Evolution du taux d occupation des parkings de Montpellier'
-plot "nom_du_fichier.txt" using 1:2 with linepoints
+plot "datas_parks.txt" using 1:2 title "ANTI" with linepoints, using 1:3 tittle "COME" with linespoints, using 1:3 title "CORU" with linespoints, using 1:4 title"OCCI"
 
 ````
 
-le "using 1:2" extrait les données de la 1ère et 2 ème colonne du fichier en question 
-<br>
+>**La ligne timefmt permet de définir le format de la date, ici par exemple cela sera en Heure, Minutes, Secondes**
 <br>
 
-**Voici les courbes qui montrent le taux d'occupation des parkings de Montpellier à des jours différents**
+
+>**le "using 1:2" extrait les données de la 1ère et 2 ème colonne du fichier en question .**
+
+
 <br>
 
 <img src="/Captures/Courbes_parkings.PNG" alt="parkings">
 
-**Ici, j'ai pris l'exemple de 4 parkings de Montpellier, on peut voir l'évolution de ces parkings sur la journée du jeudi 26/01 de 9 heures à 19 heures.**
-<br>
 <br>
 
-
-**On peut constater qu'ils nont pas la même fréquentation car cela dépend de leur emplacement.
+**On peut constater qu'ils n'ont pas la même fréquentation car cela dépend de leur emplacement.
 Par exemple, pour le parkings "Occitanie" j'ai constaté qu'il se situé à coté d'un IUT et j'en ai déduit une corrélation puisque si l'on remarque, ce parking se remplt fortement entre 9h et 12h qui est souvent le début des cours.**
 <br>
 
@@ -346,8 +358,29 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 <br>
 <br>
 
+>**Voici maintenant les différentes coubres concernant le taux d'occupation total pour tous les parkings de la ville de Montpellier à des jours différents**
+<br>
+<br>
 
 
+<img src="/Captures/Courbe_jeu.PNG" alt="Jeudi">
+<br>
+<br>
+<img src="/Captures/Courbe_sam.PNG" alt="Samedi">
+<br>
+<br>
+<img src="/Captures/Courbe_dimPNG" alt="Dimanche">
+
+
+
+
+
+
+
+
+### Calcul mathématiques des données ###
+<br>
+Pour avoir plus d'informations concernant l'analyse de ces données 
 
 
 
