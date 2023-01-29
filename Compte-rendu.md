@@ -323,11 +323,29 @@ plot "nom_du_fichier.txt" using 1:2 with linepoints
 
 le "using 1:2" extrait les données de la 1ère et 2 ème colonne du fichier en question 
 <br>
+<br>
 
 **Voici les courbes qui montrent le taux d'occupation des parkings de Montpellier à des jours différents**
 <br>
 
-<img src="/Captures/courbes_parkings.PNG" alt="parkings">
+<img src="/Captures/Courbes_parkings.PNG" alt="parkings">
+
+**Ici, j'ai pris l'exemple de 4 parkings de Montpellier, on peut voir l'évolution de ces parkings sur la journée du jeudi 26/01 de 9 heures à 19 heures.**
+<br>
+<br>
+
+
+**On peut constater qu'ils nont pas la même fréquentation car cela dépend de leur emplacement.
+Par exemple, pour le parkings "Occitanie" j'ai constaté qu'il se situé à coté d'un IUT et j'en ai déduit une corrélation puisque si l'on remarque, ce parking se remplt fortement entre 9h et 12h qui est souvent le début des cours.**
+<br>
+
+**Puis vers 12h et jusqu'à 13 heures il y a une légére diminution du taux d'occupation puisuqe c'est souvent l'heure du repas .
+Et puis enfin on peut constater que de 14h jusqu'à 15 heures l'occupation reste constant et à partir de 16 heures et ce, jusqu'à 9 heures il subit une plus forte diminution de l'occupation comparé aux autres parkings.
+On peut analyser cela par le fait que vers 16 heures certaines personnes finissent les cours et le travail.**
+
+<br>
+<br>
+
 
 
 
