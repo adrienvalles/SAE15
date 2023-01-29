@@ -1,38 +1,21 @@
-18:16:56  47,01%
-18:20:01  46.95%
-18:23:12  46.90%
-18:26:22  46.85%
-18:29:31  46.79%
-18:32:38  46.74%
-18:35:45  46.63%
-18:38:54  46.54%
-18:44:10  46.44%
-18:47:18  46.38%
-18:50:25  46.3%
-18:53:35  46.21%
-18:56:43  46.13%
-18:59:50  46.03%
-19:02:57  45.95%
-Sat Jan 21 19:06:04 2023 Taux occupation: 45.86%
-Sat Jan 21 19:09:11 2023 Taux occupation: 45.77%
-Sat Jan 21 19:12:18 2023 Taux occupation: 45.71%
-Sat Jan 21 19:15:28 2023 Taux occupation: 45.63%
-Sat Jan 21 19:18:36 2023 Taux occupation: 45.57%
-Sat Jan 21 19:21:46 2023 Taux occupation: 45.51%
-Sat Jan 21 19:24:57 2023 Taux occupation: 45.46%
-Sat Jan 21 19:28:15 2023 Taux occupation: 45.4%
-Sat Jan 21 19:31:24 2023 Taux occupation: 45.35%
-Sat Jan 21 19:34:33 2023 Taux occupation: 45.3%
-Sat Jan 21 19:37:43 2023 Taux occupation: 45.24%
-Sat Jan 21 19:40:50 2023 Taux occupation: 45.17%
-Sat Jan 21 19:43:57 2023 Taux occupation: 45.12%
-Sat Jan 21 19:47:05 2023 Taux occupation: 45.07%
-Sat Jan 21 19:50:12 2023 Taux occupation: 45.02%
-Sat Jan 21 19:53:19 2023 Taux occupation: 44.97%
-Sat Jan 21 19:56:26 2023 Taux occupation: 44.93%
-Sat Jan 21 19:59:34 2023 Taux occupation: 44.9%
-Sat Jan 21 20:02:40 2023 Taux occupation: 44.86%
-Sat Jan 21 20:05:48 2023 Taux occupation: 44.81%
-Sat Jan 21 20:08:59 2023 Taux occupation: 44.78%
-Sat Jan 21 20:12:09 2023 Taux occupation: 44.74%
-Sat Jan 21 20:15:19 2023 Taux occupation: 44.7%
+
+14:00:00  46:82%
+14:30:00  47.74%
+15:00:00  48.99%
+15:30:00  50.30%
+16:00:00  52.58%
+16:30:00  52.27%
+17:00:00  51.39%
+17:30:00  51.19%
+18:30:00  51.05%
+19:00:00  48.88%
+19:30:00  46.83%
+20:00:00  46.57%
+20:30:00  47.96%
+21:00:00  48.60%
+21:30:00  48.21%
+22:00:00  48.67%
+22:30:00  47.28%
+23:00:00  46.32%
+23:30:00  44.11%
+23:59:00  42.08%
