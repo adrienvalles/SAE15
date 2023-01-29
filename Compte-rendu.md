@@ -363,13 +363,27 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 <br>
 
 
-<img src="/Captures/Courbe_jeu.PNG" alt="Jeudi">
-<br>
-<br>
 <img src="/Captures/Courbe_sam.PNG" alt="Samedi">
 <br>
+
+>**Pour le samedi 22/01/2023**
+
 <br>
-<img src="/Captures/Courbe_dimPNG" alt="Dimanche">
+<br>
+<img src="/Captures/Courbe_dim.PNG" alt="Dimanche">
+<br>
+
+>**Pour le dimanche 23/01/2023**
+
+<br>
+<br>
+<img src="/Captures/Courbe_jeu.PNG" alt="Jeudi">
+<br>
+
+>**Pour le jeudi 26/01/2023**
+
+<br>
+<br>
 
 
 
