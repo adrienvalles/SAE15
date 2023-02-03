@@ -144,7 +144,7 @@ for j in range(num):#Nombre de fois où la boucle va se répéter
             f2.write('Le pourcentage de places libres est de :')
             f2.write(str(pourcentage_l)) #Affichage du pourcentage de places lbres
             f2.write("%")
-            f2.write('\n')
+            f2.write('\n')P
             f2.write('\n')
             pourcentage_o=100-(pourcentage_l*100)/total
             f2.write('Le pourcentage de places occupées est de :')
