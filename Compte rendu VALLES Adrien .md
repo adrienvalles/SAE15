@@ -396,7 +396,7 @@ On peut analyser cela par le fait que vers 16 heures certaines personnes finisse
 
 
 
-**De 14h à 16h le taux d'occupation augmente fortement de 6 à 7% . J'imagine que le Samedi la plupart des gens ne travaillent pas, pratiquement toutes les écoles sont fermés, hors mis pour certaines universités ou les étudiants ont cours.**
+**De 14h à 16h le taux d'occupation augmente fortement de 6 à 7% . J'imagine que le Samedi la plupart des gens ne travaillent pas, pratiquement toutes les écoles sont fermées, hors mis pour certaines universités ou les étudiants ont cours.**
 
 
 
@@ -462,7 +462,7 @@ print(pvariance(occup))
 <br>
 
 J'ai créer une fonction "moyenne" qui caclule la moyenne à partir de la longueur de la liste ("len")
-puis une focntion "ecart-type" qui calcule la variance à partir des valeurs et de la moyenne de L'opérateur += effectue une addition puis affecte le résultat à la même variable
+puis une focntion "ecart-type" qui calcule la variance à partir des valeurs de la liste et de la moyenne, l'opérateur += effectue une addition puis affecte le résultat à la même variable.
 Puis le calcul de l'écart type s'effectue en divisant 1 par la longueur de la liste multiplié par le résultat de la variance
 
 <br>
